@@ -1,1 +1,0 @@
-# backyard-gardeners-bootstrap
