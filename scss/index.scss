@@ -3,11 +3,12 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~bootswatch/dist/sketchy/bootswatch';
 
+
 *{
     font-size: medium;
 }
 body {
-    background-color: #4f515b;
+    background-color: #8c8d92;
 }
 #carousel img {
     size: cover;
@@ -21,4 +22,13 @@ body {
 footer {
     background-color: #555;
 }
-
+.jumbotron {
+    margin-top: 10px;
+    background-color: rgb(93, 138, 54);
+}
+.card-body{
+    background-color: rgb(93, 138, 54);
+}
+.carousel-caption {
+    font-size: large;
+}
