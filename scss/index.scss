@@ -15,7 +15,11 @@ body {
                 size: cover;
             }
             .carousel-caption {
+                color:white;
                 font-size: large;
+                @include bg-color(rgb(150,150,150));
+                z-index: 100; 
+                opacity: 0.75;
             }
 
         }
@@ -37,6 +41,9 @@ body {
     }
     footer {
         @include bg-color(#555);
+        a {
+            color: #212529;
+        }
     }
 }
 
