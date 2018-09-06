@@ -1,2 +1,3 @@
-$blue: red;
-
+@mixin bg-color($color: rgb(93, 138, 54)) {
+    background-color: $color;
+}

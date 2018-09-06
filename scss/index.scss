@@ -4,31 +4,43 @@
 @import '~bootswatch/dist/sketchy/bootswatch';
 
 
-*{
-    font-size: medium;
-}
+
+
 body {
-    background-color: #8c8d92;
+    font-size: medium;
+    @include bg-color(#8c8d92);
+    #content {
+        #carousel {
+            img {
+                size: cover;
+            }
+            .carousel-caption {
+                font-size: large;
+            }
+
+        }
+        .jumbotron {
+            margin-top: 10px;
+            @include bg-color();
+        }
+        .container {
+            .card-body{
+                @include bg-color();
+            }
+        }
+        .pagination {
+            margin-right: 10%;
+            li {
+                @include bg-color();
+            }
+        }
+    }
+    footer {
+        @include bg-color(#555);
+    }
 }
-#carousel img {
-    size: cover;
-}
-#content {
-    padding-top: 40px;
-}
-.pagination {
-    margin-right: 10%;
-}
-footer {
-    background-color: #555;
-}
-.jumbotron {
-    margin-top: 10px;
-    background-color: rgb(93, 138, 54);
-}
-.card-body{
-    background-color: rgb(93, 138, 54);
-}
-.carousel-caption {
-    font-size: large;
-}
+
+
+
+
+
