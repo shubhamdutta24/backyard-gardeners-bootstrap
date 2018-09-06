@@ -111,8 +111,31 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">I accept.</label>
             </div>
-            <button type="submit" class="btn btn-success" data-toggle="collapse" data-target="#collapseExample">Submit</button>
+            <a type="submit" data-toggle="collapse" href="#collapseExample">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                Submit
+              </button>
+            </a>
           </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Confirm!!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Please Confirm that you agree to all our terms and conditions.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">I Accept</button>
+          </div>
         </div>
       </div>
     </div>
@@ -122,7 +145,9 @@
           <img class="card-img-top" src="./img/article1.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Bonsai</h5>
-            <p class="card-text">Learn how to make your own bonsai by yourself by ancient Japanese technique</p>
+            <p class="card-text d-sm-none d-lg-block ">Learn how to make your own bonsai by yourself by ancient Japanese
+              technique
+            </p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
@@ -130,7 +155,7 @@
           <img class="card-img-top" src="./img/article2.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Decoratives</h5>
-            <p class="card-text">Shop for amazing Decorative items and accessories for your garden.</p>
+            <p class=" card-text d-sm-none d-lg-block ">Shop for amazing Decorative items and accessories for your garden.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
@@ -138,29 +163,15 @@
           <img class="card-img-top" src="./img/article3.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Be Creative <span class="badge badge-secondary">New</span> </h5>
-            <p class="card-text">You can also sell your creative pieces of art that you would like for people to buy from
-              you at a profitable price.</p>
+            <p class=" card-text d-sm-none d-lg-block ">You can also sell your creative pieces of art that you would like
+              for people to buy from you at a profitable price.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
     </div>
-    <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-end">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1">Previous</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">Next</a>
-        </li>
-      </ul>
-    </nav>
   </div>
   <footer class="page-footer font-small unique-color-dark">
-
     <div style="background-color: #afaeb9;">
       <div class="container">
         <div class="row py-4 d-flex align-items-center">
@@ -195,7 +206,6 @@
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>This company dates back to 1900. We have been developing a handful of our own techniques. We have been studying
             the chinese art of creating moss gardens since year 2000.</p>
-
         </div>
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <h6 class="text-uppercase font-weight-bold">Products</h6>
@@ -212,7 +222,6 @@
           <p>
             <a href="#!">Bonsai</a>
           </p>
-
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <h6 class="text-uppercase font-weight-bold">Useful links</h6>
@@ -241,7 +250,6 @@
             <i class="fa fa-phone mr-3"></i> +91 7677787331</p>
           <p>
             <i class="fa fa-print mr-3"></i> +91 7677787331</p>
-
         </div>
       </div>
     </div>
