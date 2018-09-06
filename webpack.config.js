@@ -12,30 +12,21 @@ module.exports = {
       {
         test:/\.css$/,
         use:[{
-          loaders: ["style-loader","css-loader"]
+          loader: 'style-loader',
+        },{
+          loader: 'css-loader',
         }]
       },{
         test: /\.(png|svg|jpg|gif|jpeg)$/,
-        use: [
-          'file-loader'
-        ]
-      },
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use:[{
-          loader:'url-loader',
-          options: {
-            limit: 8192,
-            name:'[name].[ext]',
-            outputPath:'assets'
-          }
+        use: [{
+          loader: 'file-loader',
         }]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader'
-        ]
+        use: [{
+          loader: 'file-loader',
+        }]
       },
       {
         test: /\.(scss)$/,
